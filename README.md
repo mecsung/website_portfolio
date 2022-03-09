@@ -1,12 +1,12 @@
 # website_portfolio
 
-create virtual env
-python -m venv venv
-
-cd /c/Users/Emachines/PycharmProjects/Portfolio_website
-source venv/Scripts/activate
-pip freeze > requirements.txt
-git init
-git add .
-git commit -am "second commit"
-git push heroku master
+create virtual env <br>
+python -m venv venv <br>
+<br>
+cd /c/Users/Emachines/PycharmProjects/Portfolio_website <br>
+source venv/Scripts/activate <br>
+pip freeze > requirements.txt <br>
+git init <br>
+git add . <br>
+git commit -am "second commit" <br>
+git push heroku master<br>
