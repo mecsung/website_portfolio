@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+{% block title %}mecsung{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
+
+{% block content %}
+<body>
+	<section class="homepage" id="home">
+		<div class="contain">
+            <div class="text">
+                <label>
+                    <span>Hi</span>, I'm Marc Ace Legaspi
+                </label>
+                <div class="wrapper">
+                    <div class="static">I Love</div>
+                    <ul class="dynamic">
+                        <li><span>Software Engineering</span></li>
+                        <li><span>Machine Learning</span></li>
+                        <li><span>Programming</span></li>
+                    </ul>
+                </div>
+
+                <div class="desc">
+                    <label>"Nothing will work <span>unless you do"</span>
+                    <br>- Maya Angelou</br>
+                    </label>
+                </div>
+                <a href="https://github.com/mecsung" title="Github"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/marc-ace-legaspi-465a66223/" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+                <i class="fas fa-envelope"></i>
+                <a href="https://www.facebook.com/mecsung" title="Facebook"><i class="fab fa-facebook"></i></a>
+                
+            </div>
+	    </div>
+	</section>
+
+	<section class="contactpage" id="contact">
+		<div class="info">
+			<div class="details">
+				<div class="left">
+					<div class="cmd">
+						<label>
+							<span>is.me()</span><br>
+							>> A Computer Science student with passion for solving problems and learning new things.
+						</label>
+						<p class="lang">>> python</p>
+						<div class="stat1">
+							<div class="progress">
+						  		<div class="progress-bar
+						  		bg-success progress-bar-striped progress-bar-animated"
+						  		role="progressbar"
+						  		style="width: 100%">
+						  		</div>
+							</div>
+						</div>
+						<p class="lang">>> php</p>
+						<div class="stat2">
+							<div class="progress">
+						  		<div class="progress-bar
+						  		bg-success progress-bar-striped progress-bar-animated"
+						  		role="progressbar"
+						  		style="width: 100%">
+						  		</div>
+							</div>
+						</div>
+						<p class="lang">>> sql</p>
+						<div class="stat3">
+							<div class="progress">
+						  		<div class="progress-bar
+						  		bg-success progress-bar-striped progress-bar-animated"
+						  		role="progressbar"
+						  		style="width: 100%">
+						  		</div>
+							</div>
+						</div>
+						<p class="lang">>> c++</p>
+						<div class="stat4">
+							<div class="progress">
+						  		<div class="progress-bar
+						  		bg-success progress-bar-striped progress-bar-animated"
+						  		role="progressbar"
+						  		style="width: 100%">
+						  		</div>
+							</div>
+						</div>
+						<p class="lang">>> java</p>
+						<div class="stat5">
+							<div class="progress">
+						  		<div class="progress-bar
+						  		bg-success progress-bar-striped progress-bar-animated"
+						  		role="progressbar"
+						  		style="width: 100%">
+						  		</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="right">
+					<p>FIND ME ONLINE:</p>
+					<p>
+						<a href="https://github.com/mecsung" title="Github">
+						<i class="fab fa-github"></i>
+						<span>github</span></a>
+					</p>
+					<p>
+						<a href="https://www.linkedin.com/in/marc-ace-legaspi-465a66223/" title="Linkedin">
+	                	<i class="fab fa-linkedin"></i>
+	                	<span>linkedin</span></a>
+					</p>
+					<p>
+						<i class="fas fa-envelope"></i>
+	                	<span>marclegaspi2@gmail.com</span>
+					</p>
+					<p>
+						<a href="https://www.facebook.com/mecsung" title="Facebook">
+	                	<i class="fab fa-facebook"></i>
+	                	<span>facebook</span></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="projectpage" id="projects">
+		<div class="programs">
+			<div class="rc one">
+				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="{{ url_for('static', filename='images/nlp.png') }}"
+				      class="d-block w-100" alt="Lemmatizer of Tagalog -UM Verbs">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="{{ url_for('static', filename='images/yae.png') }}"
+				      class="d-block w-100" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="{{ url_for('static', filename='images/yae.png') }}"
+				      class="d-block w-100" alt="...">
+				    </div>
+				  </div>
+				</div>
+				<div class="descrip">
+					<p>
+					<span>ML & NLP</span>
+					<a href="https://github.com/mecsung" title="Github">
+						<i class="fa-solid fa-link"></i>Github</a><br>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+				</div>
+				
+			</div>
+			<div class="rc two">
+				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="{{ url_for('static', filename='images/yae.png') }}"
+				      class="d-block w-100" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="{{ url_for('static', filename='images/yae.png') }}"
+				      class="d-block w-100" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="{{ url_for('static', filename='images/yae.png') }}"
+				      class="d-block w-100" alt="...">
+				    </div>
+				  </div>
+				</div>
+				<div class="descrip">
+					<p>
+					<span>ML & NLP</span>
+					<a href="https://github.com/mecsung" title="Github">
+						<i class="fa-solid fa-link"></i>Github</a><br>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+				</div>
+			</div>
+			<div class="rc three">
+				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="{{ url_for('static', filename='images/snake.png') }}"
+				      class="d-block w-100" alt="Snake and Apples">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="{{ url_for('static', filename='images/yae.png') }}"
+				      class="d-block w-100" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="{{ url_for('static', filename='images/yae.png') }}"
+				      class="d-block w-100" alt="...">
+				    </div>
+				  </div>
+				</div>
+				<div class="descrip">
+					<p>
+					<span>ML & NLP</span>
+					<a href="https://github.com/mecsung" title="Github">
+						<i class="fa-solid fa-link"></i>Github</a><br>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+{% endblock %}

@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #111;
+    font-family: 'Space Mono', monospace;
+}
+.homepage {
+	padding: 2%;
+	height: 100vh;
+	width: 100%;
+}
+.contactpage, .projectpage {
+	height: 100vh;
+	width: 100%;
+	padding: 10%;
+}
+/******* is.home() PAGE *******/
+.homepage .contain {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+}
+.contain .text {
+	height: 100%;
+	margin-top: 50%;
+	margin-left: 0;
+}
+/* QUOTE  */
+.contain .desc, span {
+    color: #00a463;
+}
+.contain .desc label {
+	color: #FFF;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+}
+/* NAME */
+.text label {
+    color: #FFF;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 30px;
+}
+.wrapper {
+    display: block;
+}
+.wrapper .static {
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px;
+    color: #FFF;
+    font-family: 'Space Mono', monospace;
+}
+.wrapper .dynamic {
+    line-height: 50px;
+    height: 50px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+.dynamic li {
+    list-style: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    top: 0;
+    position: relative;
+    animation: slide 15s steps(3) infinite;
+}
+.dynamic li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    border-left: 1px solid #00a463;
+    animation: typing 5s steps(20) infinite;
+}
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 10px);
+    }
+    100% {
+        left: 0;
+    }
+}
+@keyframes slide {
+    100% {
+        top: -150px;
+    }
+}
+i {
+    margin-top: 10%;
+    font-size: 20px;
+    color: white;
+}
+i:hover {
+    color: #00a463;
+    cursor: pointer;
+}
+/******* is.me() PAGE *******/
+.contactpage .info .details {
+	margin-top: 20%;
+	padding: 0;
+}
+.info .details {
+	flex-direction: column;
+}
+.details .left, .right{
+	width: 100%;
+}
+.details .right a {
+	text-decoration: none;
+}
+.details label {
+	padding: 5%;
+    font-size: 12px;
+    color: #00a463;
+    width: 100%;
+}
+.cmd {
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	box-shadow: 5px 5px #888888;
+	padding: 3%;
+}
+.lang {
+	margin-bottom: 0;
+	color: #00a463;
+	margin-left: 2%;
+	font-size: 12px;
+}
+.cmd .stat1, .stat2, .stat3, .stat4, .stat5 {
+	padding: 0;
+}
+.stat2, .stat3 {
+	width: 75%;
+}
+.stat4, .stat5 {
+	width: 50%;
+}
+.details .right	{
+	padding: 5%;
+}
+.details .right p {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	height: 30px;
+	color: #FFF;
+}
+.details .right span {
+	font-size: 12px;
+	width: 100%;
+	color: #FFF;
+}
+
+/******* is.projects() PAGE *******/
+.programs {
+	display: flex;
+	flex-direction: column;
+	padding-top: 25%;
+
+}
+.rc {
+	width: 100%;
+	margin-bottom: 10%;
+	background: rgba(0,0,0,0.8);
+	box-shadow: 5px 5px #888888;
+	display: inline-block;
+}
+.rc img {
+	height: 200px;
+}
+.rc p {
+	padding: 4%;
+	color: #00a463;
+	font-size: 12px;
+}
+.rc span {
+	color: #FFF;
+	font-size: 15px;
+}
+.rc a {
+	text-decoration: none;
+	color: #FFF;
+}
+.rc i {
+	font-size: 12px;
+	margin-right: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+ 	.homepage {
+		padding: 2%;
+		height: 100vh;
+		width: 100%;
+	}
+	.contactpage, .projectpage {
+		height: 100vh;
+		width: 100%;
+		padding: 10%;
+	}
+	/******* is.home() PAGE *******/
+    .contain .text {
+    	margin-top: 20%;
+    }
+    /* QUOTE  */
+    .contain .desc label {
+        font-size: 18px;
+    }
+    /* NAME */
+    .text label {
+        font-size: 50px;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    .wrapper .static {
+        font-size: 30px;
+        line-height: 50px;
+        height: 50px;
+    }
+    .dynamic li {
+	    font-size: 30px;
+    }
+    /******* is.me() PAGE *******/
+	.contactpage .info .details {
+		height: 70vh;
+		margin-top: 0;
+	}
+	.info .details {
+		display: flex;
+		flex-direction: row;
+	}
+	.details .left, .right{
+		width: 50%;
+	}
+	.details label {
+		padding: 0;
+        font-size: 15px;
+        margin-bottom: 10%;
+    }
+    .cmd {
+		padding: 5%;
+    }
+	.lang {
+    	font-size: 15px;
+    }
+    .details .right p {
+    	font-size: 18px;
+    	height: 50px;
+    }
+    .details .right span {
+    	font-size: 18px;
+    }
+    /******* is.projects() PAGE *******/
+    .programs {
+    	flex-direction: row;
+    	padding-top: 0;
+    }
+    .rc {
+    	height: 70vh;
+    	margin-left: 20px;
+    }
+}
